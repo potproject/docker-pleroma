@@ -1,0 +1,26 @@
+version: '3'
+services:
+
+  db:
+    restart: always
+    image: postgres:9.6-alpine
+    environment:
+      POSTGRES_USER: pleroma
+      POSTGRES_PASSWORD: pleroma
+### Uncomment to enable DB persistance
+#    volumes:
+#      - ./postgres:/var/lib/postgresql/data
+
+  web:
+    build: .
+    image: potproject/pleroma
+    restart: always
+    command: mix phx.server
+    ports:
+      - "4000:4000"
+    depends_on:
+      - db
+### volumes:
+#     - ./public/assets:/mastodon/public/assets
+#     - ./public/packs:/mastodon/public/packs
+#     - ./public/system:/mastodon/public/system
