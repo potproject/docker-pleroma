@@ -7,9 +7,10 @@ services:
     environment:
       POSTGRES_USER: pleroma
       POSTGRES_PASSWORD: pleroma
+      POSTGRES_DB: pleroma_dev
 ### Uncomment to enable DB persistance
-#    volumes:
-#      - ./postgres:/var/lib/postgresql/data
+#   volumes:
+#     - ./postgres:/var/lib/postgresql/data
 
   web:
     build: .
@@ -20,7 +21,5 @@ services:
       - "4000:4000"
     depends_on:
       - db
-### volumes:
-#     - ./public/assets:/mastodon/public/assets
-#     - ./public/packs:/mastodon/public/packs
-#     - ./public/system:/mastodon/public/system
+#    volumes:
+#     - ./uploads:/pleroma/uploads

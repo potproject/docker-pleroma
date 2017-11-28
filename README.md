@@ -21,7 +21,9 @@ docker-compose run --rm web mix ecto.migrate
 docker-compose up -d
 ```
 
-try it http://localhost:4000/
+コンパイルを行うため、 ``` docker-compose up -d ``` 後に起動まで数分かかります。  
+
+try it http://localhost:4000/  
 
 ## LICENCE
-AGPL
+AGPL v3

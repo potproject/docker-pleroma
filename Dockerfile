@@ -22,3 +22,6 @@ RUN cd /pleroma \
 #setting
 COPY ./config/config.exs /pleroma/config/
 COPY ./config/dev.secret.exs /pleroma/config/
+
+RUN mkdir /pleroma/uploads
+VOLUME /pleroma/uploads/
