@@ -4,6 +4,11 @@ Docker版Pleromaです。非公式です。developブランチを使用してお
 
 Pleroma Original Repo:https://git.pleroma.social/pleroma/pleroma  
 
+
+## Containers  
+* elixir:1.5.2-alpine ([Docker Hub](https://hub.docker.com/_/elixir/))  
+* postgres:9.6-alpine ([Docker Hub](https://hub.docker.com/_/postgres/))  
+
 ## Configuration  
  ``` config/config.exs ```  
  
