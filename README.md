@@ -6,7 +6,7 @@ Pleroma Original Repo:https://git.pleroma.social/pleroma/pleroma
 
 
 ## Containers  
-* elixir:1.5.2-alpine ([Docker Hub](https://hub.docker.com/_/elixir/))  
+* elixir:1.5.3-alpine ([Docker Hub](https://hub.docker.com/_/elixir/))  
 * postgres:9.6-alpine ([Docker Hub](https://hub.docker.com/_/postgres/))  
 
 ## Configuration  

@@ -1,4 +1,4 @@
-FROM elixir:1.5.2-alpine
+FROM elixir:1.5.3-alpine
 
 LABEL maintainer "potproject <https://github.com/potproject>"
 
